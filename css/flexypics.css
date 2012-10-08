@@ -1,0 +1,102 @@
+#flexyPics {
+	background: #222;
+	display: block;
+	height:100%;
+	left: 0;
+	position: absolute;
+    overflow: hidden;
+    top:0;
+    width: 100%;
+}
+.slice {
+	float: left;
+	position: relative;
+}
+.slice.big {
+	height: 50%;
+	width: 75%;
+}
+.col {
+	float: left;
+	height: 100%;	
+	width: 25%;
+}
+.col.mini {
+	height: 100%;
+	width: 34%;
+}
+.mask {
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.mask img {
+	height: 101%;
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+#one,
+#two,
+#three {
+	width: 100%;
+	height: 34%;
+}
+#three {
+	height: 32%;
+}
+#four {
+	height: 100%;
+	width: 66%;
+}
+#five,
+#six,
+#seven,
+#eight {
+	height: 36%;
+	width: 34%;
+}
+#five,
+#eight {
+	height: 64%;
+}
+#seven,
+#eight {
+	width: 100%
+}
+#nine {
+	height: 100%;
+	width: 66%;
+}
+#nine img.hidden {
+	display: none;
+	z-index: 100;
+}
+#loading-mask {
+	background: url('../img/layout/ajax-loader.gif') no-repeat center center #020127;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+@media (max-width:799px) {
+	.col.left {
+		display:none;
+	}
+	.slice.big {
+		height: 50%;
+		width: 100%;
+	}
+}
+@media (max-width:640px) {
+	#four {
+		width: 100%;
+	}
+	#five,
+	#six {
+		display: none;
+	}
+}
+
