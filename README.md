@@ -7,8 +7,8 @@ The main structure is mostly css, it uses just some lines of JS for the smart r
 
 Play with it. Try resizing the browser and see how it adapts and resizes, <strong>from a 1080 screen to smart phone resolution!</strong>
 
-<a href="http://jotav.com.ar/proyects/template-1-grid.html">DEMO</a> of template 1, plain, without images, to see the layout more clearly.<br>
-And this is the FULL <a href="http://jotav.com.ar/proyects/template-1.html">DEMO</a> of the template 1 with images.
+<a href="http://jotav.com.ar/proyects/flexy-pics/template-1-grid.html">DEMO</a> of template 1, plain, without images, to see the layout more clearly.<br>
+And this is the FULL <a href="http://jotav.com.ar/proyects/flexy-pics/template-1.html">DEMO</a> of the template 1 with images.
 
 ## Usage
 
