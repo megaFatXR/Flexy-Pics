@@ -54,4 +54,5 @@ $(window).resize(function() {
 
 
 by <a href="http://mpadesign.me" target="_blank">MPA</a> & <a href="https://twitter.com/juan_v_" target="_blank">JOTAV</a>
+Photos by <a href="http://www.adailysomething.com/2012/03/recipe-cafe-ole.html" target="_blank">Minileidy</a>
 
