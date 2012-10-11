@@ -52,6 +52,7 @@ $(window).resize(function() {
 ####Note:
 - This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin, by Gaya Kessler, and should be linked for its correct use.
 
+###Work in progress! new templates and examples comming soon.
 
 by <a href="http://mpadesign.me" target="_blank">MPA</a> & <a href="https://twitter.com/juan_v_" target="_blank">JOTAV</a><br>
 Photos by <a href="http://cargocollective.com/onemorefoticoplease" target="_blank">Minileidy</a>
