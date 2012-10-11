@@ -23,7 +23,7 @@ And this is the FULL <a href="http://jotav.com.ar/proyects/flexy-pics/template-1
 - <strong>Its IMPORTANT to give HEIGHT and WIDTH attributes to the images. Change this attributes in the template to the ones of the images your using!</strong> 
 
 ###Setup the Grid
-```html
+```javascript
 $(document).ready(function(){
 	$("#flexyGrid").queryLoader2({
 		onLoadComplete: function () {
