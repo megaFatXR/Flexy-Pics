@@ -52,7 +52,7 @@ $(window).resize(function() {
 
 ####Note:
 - This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin, by Gaya Kessler, and should be linked for its correct use.
-- Be careful to change de ids and classes where corresponds if you change them form the original template markup. In the JS and CSS files.
+- Be careful to change de ids and classes where corresponds if you change them form the original template markup. In the JS setup and CSS files.
 
 ####Work in progress! new templates and examples comming soon.
 
