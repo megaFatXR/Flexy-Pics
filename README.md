@@ -13,10 +13,10 @@ And this is the FULL <a href="http://jotav.com.ar/proyects/flexy-pics/template-1
 ## Usage
 
 ###Link Files
-- `<link rel="stylesheet" href="css/flexycss"/>`
+- `<link rel="stylesheet" href="css/flexypics.css"/>`
 - `<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>`
 - `<script type="text/javascript" src="js/jquery.queryloader2.js"></script>`
-- `<script type="text/javascript" src="js/jquery-flexy.js"></script>`
+- `<script type="text/javascript" src="js/jquery.flexypics.js"></script>`
 
 ###The Markup
 - Copy the markup within the #flexGrid div of the template of your choice.
