@@ -14,12 +14,12 @@ And this is the FULL <a href="http://jotav.com.ar/proyects/flexy-pics/template-1
 
 ###Link Files
 - `<link rel="stylesheet" href="css/flexypics.css"/>`
-- `<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>`
+- `<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>`
 - `<script type="text/javascript" src="js/jquery.queryloader2.js"></script>`
 - `<script type="text/javascript" src="js/jquery.flexypics.js"></script>`
 
 ###The Markup
-- Copy the markup within the #flexGrid div of the template of your choice.
+- Copy the markup within the #flexyPics div of the template of your choice.
 - <strong>Its IMPORTANT to give HEIGHT and WIDTH attributes to the images. Change this attributes in the template to the ones of the images your using!</strong> 
 
 ###Setup the Grid
@@ -52,7 +52,7 @@ $(window).resize(function() {
 
 ####Note:
 - This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin, by Gaya Kessler, and should be linked for its correct use.
-- Be careful to change de ids and classes where corresponds if you change them form the original template markup. In the JS setup and CSS files.
+- For its correct use respect the container id and de classes of the internal modules, but you can add whatever content inside the modules with your own particular classes.
 
 ####Work in progress! new templates and examples comming soon.
 
