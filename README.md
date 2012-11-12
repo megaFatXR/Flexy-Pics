@@ -1,7 +1,7 @@
 Flexy Pics
 ==========
 
-A responsive photo grid that always adapts to fullscreen, no matter the resolution. Each image inside each block slice resizes keeping proportions.
+A fully responsive photo grid that always adapts to fullscreen, no matter the resolution. Each image inside each block slice resizes keeping proportions.
 Can be used for showing pictures, a graphic menu, a portfolio, or just an original UI combining images, text and links.
 The main structure is mostly css, it uses just some lines of JS for the smart resizing of the images inside each block.  
 
@@ -9,6 +9,7 @@ Play with it. Try resizing the browser and see how it adapts and resizes, <stron
 
 <a href="http://jotav.com.ar/projects/flexy-pics/template-1-grid.html">DEMO</a> of template 1, plain, without images, to see the layout more clearly.<br>
 And this is the FULL <a href="http://jotav.com.ar/projects/flexy-pics/template-1.html">DEMO</a> of the template 1 with images.
+- Template 2 Grid <a href="http://jotav.com.ar/projects/flexy-pics/template-2-grid.html">DEMO</a>
 
 ## Usage
 
