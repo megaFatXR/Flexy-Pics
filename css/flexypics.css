@@ -1,5 +1,4 @@
-#flexyPics,
-#flexyPics-ajax {
+#flexyPics {
 	background: #222;
 	display: block;
 	height:100%;
@@ -13,13 +12,6 @@
 	-o-transition: top 0.4s ease-in 0s;
 	transition: top 0.4s ease-in 0s;
 }
-#flexyPics-ajax {
-	z-index: 99;
-	background: transparent;
-}
-#ajax #flexyPics2 {
-	z-index: 999;
-}
 .slice {
 	float: left;
 	position: relative;
@@ -28,7 +20,6 @@
 	float: left;
 	height: 100%;	
 	width: 25%; 
-/*	margin-left: -0.1%*/
 }
 .col.big {
 	width: 50%;
