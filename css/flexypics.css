@@ -1,4 +1,5 @@
-#flexyPics {
+#flexyPics,
+#flexyPics-ajax {
 	background: #222;
 	display: block;
 	height:100%;
@@ -7,28 +8,52 @@
     overflow: hidden;
     top:0;
     width: 100%;
+    -moz-transition: top 0.4s ease-in 0s;
+	-webkit-transition: top 0.4s ease-in 0s;
+	-o-transition: top 0.4s ease-in 0s;
+	transition: top 0.4s ease-in 0s;
+}
+#flexyPics-ajax {
+	z-index: 99;
+	background: transparent;
+}
+#ajax #flexyPics2 {
+	z-index: 999;
 }
 .slice {
 	float: left;
 	position: relative;
 }
-.slice.big {
-	height: 50%;
-	width: 75%;
-}
 .col {
 	float: left;
 	height: 100%;	
-	width: 25%;
+	width: 25%; 
+/*	margin-left: -0.1%*/
 }
-.col.mini {
-	height: 100%;
-	width: 34%;
+.col.big {
+	width: 50%;
+}
+.col.big.short {
+	height: 50%;
+	margin-left: 0;
+	width: 50%;
+}
+.col.bigger {
+	width: 66.6%;
+}
+.col.short {
+	height: 50%;
+	margin-left: 0;
+	width: 33.4%;
+}
+.col.extra.big {
+	width: 75%;
 }
 .mask {
 	float: left;
 	overflow: hidden;
 	position: relative;
+	width: 100%;
 }
 .mask img {
 	height: 101%;
@@ -36,102 +61,60 @@
 	width: 100%;
 	display: none;
 }
-#one,
-#two,
-#three {
-	width: 100%;
-	height: 34%;
-}
-#three {
-	height: 32%;
-}
-#four {
+.mask.hundred {
 	height: 100%;
-	width: 66%;
 }
-#five,
-#six,
-#seven,
-#eight {
-	height: 36%;
-	width: 34%;
+.mask.oneThird {
+	height: 33.4%
 }
-#five,
-#eight {
-	height: 64%;
+.mask.fifty {
+	height: 50%
 }
-#seven,
-#eight {
-	width: 100%
+.mask.twoThird {
+	height: 66.7%
 }
-#nine {
-	height: 100%;
-	width: 66%;
+.mask.sixteen {
+	height: 16.7%;
 }
-#nine img.hidden {
-	display: none;
-	z-index: 100;
+.mask.large {
+	width: 66.6%;
 }
-#loading-mask {
-	background: url('../img/layout/ajax-loader.gif') no-repeat center center #020127;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 2000;
+.mask.small {
+	width: 33.4%;
 }
-/*
- * MENU example Styles
-*/
-.rollover {
-	background: #09c3f1;
-	display: block;
-	height: 100%;
-	left:0;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	filter: alpha(opacity=70);
-	opacity: 0;
-	position: absolute;
-	top:0;
-	-webkit-transition: all .25s linear;
-	   -moz-transition: all .25s linear;
-	    -ms-transition: all .25s linear;
-	     -o-transition: all .25s linear;
-	        transition: all .25s linear;
-	width: 100%;
+#nine.mask.multiple {
+	width: 26%;
 }
-.rollover.yellow {
-	background: yellow;
+#ten.mask.multiple {
+	width: 74%;
 }
-.rollover.pink {
-	background: pink;
-}
-.mask:hover .rollover {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);
-	opacity: .5;
-}
-/*
- * MENU example Styles END
-*/
 
-@media (max-width:799px) {
+/***************************************
+ *Media queries for tablets in portrait
+ ***************************************/
+@media (max-width:810px) {
 	.col.left {
-		display:none;
+		width: 33.5%;
 	}
-	.slice.big {
-		height: 50%;
+	.col.extra.big {
+		width: 66.5%;
+	}
+	.col.left .fifty,
+	.col.left .sixteen,
+	.col.extra.big .fifty {
+		height: 37.5%
+	}
+	.col.short {
+		width: 50%;
+		height: 37.5%;
+	}
+	.col.extra.big .fifty.thinner {
+		height: 25%;
+	}
+	.col.left .oneThird {
+		height: 25%
+	}
+	.mask.large {
 		width: 100%;
 	}
 }
-@media (max-width:640px) {
-	#four {
-		width: 100%;
-	}
-	#five,
-	#six {
-		display: none;
-	}
-}
-

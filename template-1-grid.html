@@ -7,46 +7,56 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/flexypics.css"/>
 		<style type="text/css">
-		.mask {
-			box-shadow: -3px -3px 1px #09c3f1;
-		}
+			.mask {
+				box-shadow: -3px -3px 1px #09c3f1;
+			}
+			h1 {
+				position: absolute;
+				font: 21px Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				left: 25px;
+				top: 15px;
+				z-index: 9;
+				color: #f92772;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="flexyPics">
 			<div class="slice col left">
-				<div id="one" class="mask">
-					<!-- Image-->
+				<div id="one" class="mask oneThird">
+					<h1>Flexy Pics UI</h1>
+					<!-- image - Remember to spicify height and width attributes! -->
 				</div>
-				<div id="two" class="mask">
-					<!-- Image-->
+				<div id="two" class="mask oneThird">
+					<img src="img/layout/tile-4.jpg" alt="Flex Pics" width="480" height="340">
 				</div>
-				<div id="three" class="mask">
-					<!-- Image -->
-				</div>
-			</div>
-			<div class="slice big">
-				<div id="four" class="mask large">
-					<!-- Image-->
-				</div>
-				<div id="five" class="mask">
-					<!-- Image-->
-				</div>
-				<div id="six" class="mask">
-					<!-- Image-->
+				<div id="three" class="mask oneThird">
+					<!-- image - Remember to spicify height and width attributes! -->
 				</div>
 			</div>
-			<div class="slice big">
-				<div class="col mini">
-					<div id="seven" class="mask">
-						<!-- Image-->
+			<div class="slice col extra big">
+				<div id="four" class="mask large fifty">
+					<!-- image - Remember to spicify height and width attributes! -->
+				</div>
+				<div class="col short">
+					<div id="six" class="mask twoThird">
+						<!-- image - Remember to spicify height and width attributes! -->
 					</div>
-					<div id="eight" class="mask">
-						<!-- Image -->
+					<div id="five" class="mask oneThird">
+						<!-- image - Remember to spicify height and width attributes! -->
 					</div>
 				</div>
-				<div id="nine" class="mask large">
-					<!-- Image-->
+				<div class="col short">
+					<div id="seven" class="mask oneThird">
+						<!-- image - Remember to spicify height and width attributes! -->
+					</div>
+					<div id="eight" class="mask twoThird">
+						<!-- image - Remember to spicify height and width attributes! -->
+					</div>
+				</div>
+				<div id="nine" class="mask large fifty thinner">
+					<!-- image - Remember to spicify height and width attributes! -->
 				</div>
 			</div>
 		</div>

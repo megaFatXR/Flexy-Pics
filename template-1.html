@@ -6,42 +6,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/flexypics.css"/>
-		
+		<style type="text/css">
+			h1 {
+				position: absolute;
+				font: 21px Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				left: 25px;
+				top: 15px;
+				z-index: 9;
+				color: #f92772;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="flexyPics">
 			<div class="slice col left">
-				<div id="one" class="mask">
+				<div id="one" class="mask oneThird">
+					<h1>Flexy Pics UI</h1>
 					<img src="img/layout/tile-1.jpg" alt="Flex Pics" width="480" height="340">
 				</div>
-				<div id="two" class="mask">
+				<div id="two" class="mask oneThird">
 					<img src="img/layout/tile-4.jpg" alt="Flex Pics" width="480" height="340">
 				</div>
-				<div id="three" class="mask">
+				<div id="three" class="mask oneThird">
 					<img src="img/layout/tile-5.jpg" alt="Flex Pics" width="480" height="340">
 				</div>
 			</div>
-			<div class="slice big">
-				<div id="four" class="mask large">
+			<div class="slice col extra big">
+				<div id="four" class="mask large fifty">
 					<img src="img/layout/tile-7.jpg" alt="Flex Pics" width="686" height="440">
 				</div>
-				<div id="five" class="mask">
-					<img src="img/layout/tile-13.jpg" alt="Flex Pics" width="500" height="320">
+				<div class="col short">
+					<div id="six" class="mask twoThird">
+						<img src="img/layout/tile-13.jpg" alt="Flex Pics" width="500" height="320">
+					</div>
+					<div id="five" class="mask oneThird">
+						<img src="img/layout/tile-12.jpg" alt="Flex Pics" width="495" height="230">
+					</div>
 				</div>
-				<div id="six" class="mask">
-					<img src="img/layout/tile-12.jpg" alt="Flex Pics" width="495" height="230">
-				</div>
-			</div>
-			<div class="slice big">
-				<div class="col mini">
-					<div id="seven" class="mask">
+				<div class="col short">
+					<div id="seven" class="mask oneThird">
 						<img src="img/layout/tile-8.jpg" alt="Flex Pics" width="300" height="129">
 					</div>
-					<div id="eight" class="mask">
+					<div id="eight" class="mask twoThird">
 						<img src="img/layout/tile-9.jpg" alt="Flex Pics" width="500" height="320">
 					</div>
 				</div>
-				<div id="nine" class="mask large">
+				<div id="nine" class="mask large fifty thinner">
 					<img src="img/layout/tile-10.jpg" alt="Flex Pics" width="600" height="330">
 				</div>
 			</div>
