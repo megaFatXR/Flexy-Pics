@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Flexy-pics by juan-v</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Flexy-pics</h1>
+        <p>A responsive photo grid that always adapts to fullscreen, no matter the resolution. Each image inside each block slice resizes keeping proportions.</p>
+
+        <p class="view"><a href="https://github.com/juan-v/Flexy-Pics">View the Project on GitHub <small>juan-v/Flexy-Pics</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/juan-v/Flexy-Pics/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/juan-v/Flexy-Pics/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/juan-v/Flexy-Pics">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Flexy Pics</h1>
+
+<p>A fully responsive photo grid that always adapts to fullscreen, no matter the resolution. Each image inside each block slice resizes keeping proportions.
+Can be used for showing pictures, a graphic menu, a portfolio, or just an original UI combining images, text and links.
+The main structure is mostly css, it uses just some lines of JS for the smart resizing of the images inside each block.  </p>
+
+<p>Play with it. Try resizing the browser and see how it adapts and resizes, <strong>from a 1080 screen to smart phone resolution!</strong></p>
+
+<ul>
+<li>Template 1 Grid <a href="http://jotav.com.ar/projects/flexy-pics/template-1-grid.html">DEMO</a> (plain, without images, to see the layout more clearly).</li>
+<li>Template 1 <a href="http://jotav.com.ar/projects/flexy-pics/template-1.html">FULL DEMO</a> with images.</li>
+<li>Template 2 Grid <a href="http://jotav.com.ar/projects/flexy-pics/template-2-grid.html">DEMO</a>
+</li>
+</ul><h2>Usage</h2>
+
+<h3>Link Files</h3>
+
+<ul>
+<li><code>&lt;link rel="stylesheet" href="css/flexypics.css"/&gt;</code></li>
+<li><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"&gt;&lt;/script&gt;</code></li>
+<li><code>&lt;script type="text/javascript" src="js/jquery.queryloader2.js"&gt;&lt;/script&gt;</code></li>
+<li><code>&lt;script type="text/javascript" src="js/jquery.flexypics.js"&gt;&lt;/script&gt;</code></li>
+</ul><h3>The Markup</h3>
+
+<ul>
+<li>Copy the markup within the #flexyPics div of the template of your choice.</li>
+<li>
+<strong>Its IMPORTANT to give HEIGHT and WIDTH attributes to the images. Change this attributes in the template to the ones of the images your using!</strong> </li>
+</ul><h3>Setup the Grid</h3>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#flexyGrid"</span><span class="p">).</span><span class="nx">queryLoader2</span><span class="p">({</span>
+        <span class="nx">onLoadComplete</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'.mask img'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+                <span class="nx">flexy</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+            <span class="p">});</span>
+            <span class="nx">delay</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="kd">var</span> <span class="nx">imagesArray</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">makeArray</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'#flexyGrid img'</span><span class="p">));</span>
+            <span class="nx">imagesArray</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">())</span><span class="o">-</span><span class="mf">0.5</span><span class="p">);});</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'#loading-mask'</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">900</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">imagesArray</span><span class="p">.</span><span class="nx">length</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">$</span><span class="p">(</span><span class="nx">imagesArray</span><span class="p">[</span><span class="nx">i</span><span class="p">]).</span><span class="nx">delay</span><span class="p">(</span><span class="nx">delay</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+                <span class="nx">delay</span> <span class="o">+=</span> <span class="mi">150</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">resize</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.mask img'</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">flexy</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<h4>Note:</h4>
+
+<ul>
+<li>This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin, by Gaya Kessler, and should be linked for its correct use.</li>
+<li>For its correct use respect the container id and de classes of the internal modules, but you can add whatever content inside the modules with your own particular classes.</li>
+</ul><h4>Work in progress! new templates and examples comming soon.</h4>
+
+<p>by <a href="http://mpadesign.me" target="_blank">MPA</a> &amp; <a href="https://twitter.com/juan_v_" target="_blank">JOTAV</a><br>
+Photos by <a href="http://cargocollective.com/onemorefoticoplease" target="_blank">Minileidy</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/juan-v">juan-v</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
