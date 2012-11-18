@@ -1,5 +1,5 @@
-Flexy Pics
-==========
+FlexyPics UI
+============
 
 A fully responsive photo grid that always adapts to fullscreen, no matter the resolution. Each image inside each block slice resizes keeping proportions.
 Can be used for showing pictures, a graphic menu, a portfolio, or just an original UI combining images, text and links.
@@ -52,7 +52,7 @@ $(window).resize(function() {
 
 
 ####Note:
-- This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin, by Gaya Kessler, and should be linked for its correct use.
+- This plugin depends on JQuery library and <a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/" target="_blank">QueryLoader2</a> plugin (for the image pre-loading), by Gaya Kessler, and should be linked for its correct use.
 - For its correct use respect the container id and de classes of the internal modules, but you can add whatever content inside the modules with your own particular classes.
 
 ####Work in progress! new templates and examples comming soon.
